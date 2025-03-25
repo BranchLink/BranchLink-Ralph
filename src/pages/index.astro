@@ -23,12 +23,13 @@ import { Icon } from 'astro-icon';
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 100vh;
+        /* Removed min-height: 100vh; */
+        padding: 20px; /* Added padding */
       }
 
       .card {
         max-width: 400px;
-        width: 100%;
+        width: 90%; /* Changed to percentage */
         background-color: #fff;
         border-radius: 8px;
         overflow: hidden;
@@ -118,6 +119,41 @@ import { Icon } from 'astro-icon';
         margin-bottom: 20px;
         font-size: 0.9em;
         color: #353535;
+      }
+
+      /* Media Queries for Responsiveness */
+
+      @media (max-width: 600px) {
+        /* Styles for screens smaller than 600px (e.g., phones) */
+
+        .card {
+          width: 95%; /* Take up more of the screen */
+          margin: 10px 0px; /* reduced margin */
+        }
+
+        .header-image {
+          height: 120px; /* Smaller header image */
+        }
+
+        .profile-section {
+          margin-top: -50px; /* Adjust positioning */
+        }
+
+        .profile-text h1 {
+          font-size: 1em; /* Smaller heading */
+        }
+
+        .button-list a {
+          font-size: 0.8em; /* Smaller button text */
+          padding: 10px;
+        }
+      }
+
+      @media (max-width: 400px) {
+        /* Even smaller screens */
+        .header-image {
+          height: 100px;
+        }
       }
     </style>
   </head>
