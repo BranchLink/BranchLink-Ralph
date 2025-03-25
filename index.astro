@@ -1,0 +1,212 @@
+---
+import { Icon } from 'astro-icon';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <title>BranchLink/Ralph</title>
+
+    <link rel="icon" type="image/png" href="/assets/RalphL.jpeg" />
+
+    <style>
+      /* CSS styling for the profile card */
+
+      body {
+        background-color: #282828;
+        color: #212121;
+        font-family: sans-serif;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .card {
+        max-width: 400px; /* Keep a max-width for larger screens */
+        width: 90%; /* Use a percentage for responsiveness */
+        background-color: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        display: flex;
+        flex-direction: column;
+      }
+
+      .header-image {
+        width: 100%;
+        height: 160px;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .header-image img {
+        width: 100%;
+        display: block;
+        object-fit: cover;
+      }
+
+      .profile-section {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        margin-top: -65px;
+        margin-bottom: 0px;
+      }
+
+      .profile-image {
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+        margin-bottom: 12px;
+        border: 2px solid #fff;
+        border-radius: 8px;
+      }
+
+      .profile-text {
+        text-align: left;
+      }
+
+      .profile-text h1 {
+        margin: -4px 0 4px 0;
+        font-size: 1.2em;
+        font-weight: 600;
+      }
+
+      .profile-text p {
+        margin: 0;
+        font-size: 0.9em;
+        color: #2d2d2d;
+      }
+
+      .button-list {
+        padding: 16px;
+      }
+
+      .button-list a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #f8f8f8;
+        padding: 12px 14px;
+        margin-bottom: 14px;
+        border-radius: 8px;
+        text-decoration: none;
+        color: #212121;
+        font-size: 0.85em;
+        border: 1px solid #ddd;
+      }
+
+      .button-list a span {
+        display: flex;
+        align-items: center;
+      }
+
+      .button-list a span svg {
+        margin-right: 8px;
+      }
+
+      .footer {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 0.9em;
+        color: #353535;
+      }
+
+      /* Media Queries for Responsiveness */
+
+      @media (max-width: 600px) {
+        /* Styles for screens smaller than 600px (e.g., phones) */
+
+        .card {
+          width: 95%; /* Take up more of the screen */
+          margin: 1em; /* Add some margin */
+        }
+
+        .header-image {
+          height: 120px; /* Smaller header image */
+        }
+
+        .profile-section {
+          margin-top: -50px; /* Adjust positioning */
+        }
+
+        .profile-text h1 {
+          font-size: 1em; /* Smaller heading */
+        }
+
+        .button-list a {
+          font-size: 0.8em; /* Smaller button text */
+          padding: 10px;
+        }
+      }
+
+      @media (max-width: 400px) {
+        /* Even smaller screens */
+        .header-image {
+          height: 100px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="header-image">
+        <img src="/assets/lbbusinessbuild.jpg" alt="Header Image" />
+      </div>
+
+      <div class="profile-section">
+        <img
+          class="profile-image"
+          src="/assets/RalphL.jpeg"
+          alt={`Profile image of Ralph Lopez`}
+        />
+        <div class="profile-text">
+          <h1>Ralph Lopez</h1>
+          <p>Business & Information Systems @ CSULB</p>
+        </div>
+      </div>
+
+      <div class="button-list">
+        <a href="https://www.linkedin.com/in/ralphalopez/" target="_blank">
+          <span>
+            <Icon name="mdi:linkedin" width="20px" height="20px" />
+            LinkedIn
+          </span>
+          <span>></span>
+        </a>
+        <a href="mailto:LopezAnthonyRalph@gmail.com" target="_blank">
+          <span>
+            <Icon name="mdi:email" width="20px" height="20px" />
+            Gmail
+          </span>
+          <span>></span>
+        </a>
+        <a href="https://www.instagram.com/26ralphla/" target="_blank">
+          <span>
+            <Icon name="mdi:instagram" width="20px" height="20px" />
+            Instagram
+          </span>
+          <span>></span>
+        </a>
+        <a href="https://github.com/RalphStartup" target="_blank">
+          <span>
+            <Icon name="mdi:github" width="20px" height="20px" />
+            GitHub
+          </span>
+          <span>></span>
+        </a>
+      </div>
+
+      <div class="footer">
+        <p>Powered by Next Corner</p>
+      </div>
+    </div>
+  </body>
+</html>
