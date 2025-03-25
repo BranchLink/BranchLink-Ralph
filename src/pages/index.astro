@@ -10,11 +10,8 @@ import { Icon } from 'astro-icon';
     <title>BranchLink/Ralph</title>
 
     <link rel="icon" type="image/png" href="public/assets/RalphL.jpeg" />
-    {/* Favicon path corrected and simplified */}
 
     <style>
-      /* CSS styling for the profile card */
-
       body {
         background-color: #282828;
         color: #212121;
@@ -23,13 +20,12 @@ import { Icon } from 'astro-icon';
         display: flex;
         justify-content: center;
         align-items: center;
-        /* Removed min-height: 100vh; */
-        padding: 20px; /* Added padding */
+        padding: 20px;
       }
 
       .card {
-        max-width: 400px;
-        width: 90%; /* Changed to percentage */
+        max-width: 450px;
+        width: 95%;
         background-color: #fff;
         border-radius: 8px;
         overflow: hidden;
@@ -92,7 +88,7 @@ import { Icon } from 'astro-icon';
 
       .button-list a {
         display: flex;
-        align-items: center; /* Vertical alignment */
+        align-items: center;
         justify-content: space-between;
         background-color: #f8f8f8;
         padding: 12px 14px;
@@ -105,12 +101,12 @@ import { Icon } from 'astro-icon';
       }
 
       .button-list a span {
-        display: flex; /* Flex container for icon and text */
-        align-items: center; /* Vertical alignment within */
+        display: flex;
+        align-items: center;
       }
 
       .button-list a span svg {
-        margin-right: 8px; /* Spacing between icon and text */
+        margin-right: 8px;
       }
 
       .footer {
@@ -121,36 +117,31 @@ import { Icon } from 'astro-icon';
         color: #353535;
       }
 
-      /* Media Queries for Responsiveness */
-
       @media (max-width: 600px) {
-        /* Styles for screens smaller than 600px (e.g., phones) */
-
         .card {
-          width: 95%; /* Take up more of the screen */
-          margin: 10px 0px; /* reduced margin */
+          width: 98%;
+          margin: 10px 0px;
         }
 
         .header-image {
-          height: 120px; /* Smaller header image */
+          height: 120px;
         }
 
         .profile-section {
-          margin-top: -50px; /* Adjust positioning */
+          margin-top: -50px;
         }
 
         .profile-text h1 {
-          font-size: 1em; /* Smaller heading */
+          font-size: 1em;
         }
 
         .button-list a {
-          font-size: 0.8em; /* Smaller button text */
+          font-size: 0.8em;
           padding: 10px;
         }
       }
 
       @media (max-width: 400px) {
-        /* Even smaller screens */
         .header-image {
           height: 100px;
         }
